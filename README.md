@@ -11,3 +11,9 @@ Sample usage of a cartesian topology.
 Method description can be found at:
 http://parallelcomp.uw.hu/ch08lev1sec2.html
 Sample processes 6x6 matrices using 3x3 grid (9 ranks)
+
+## MPI / OpenMP Global search algorithm
+Parallel global optimization algorithm.
+Each rank parallely processes N >= 1 search intervals in an iteration. Benefitable when function evaluation is time-expensive.
+Target function plot via WolframAlpha:
+https://www.wolframalpha.com/input/?i=min%28sin%2818.+*+x+-+3.%29+*+cos%2810.+*+x+-+7.%29+%2B+1.5%29+x+from+-3+to+3
