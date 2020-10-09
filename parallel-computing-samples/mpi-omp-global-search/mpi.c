@@ -287,7 +287,8 @@ int main(int argc, char** argv) {
                  procRank,
                  nthreads);
     t = MPI_Wtime() - t;
-    if (procRank == 0) {
+    if (procRank == 0)
+    {
         printf("Elapsed time: %f \n", t);
         printf("X* = %f Z* = %f Count = %d\n", result.x, result.z, result.count);
     }

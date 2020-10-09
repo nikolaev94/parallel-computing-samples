@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BA19457A-0F95-4E62-93EC-AE2C25C3BA38}</ProjectGuid>
-    <RootNamespace>mpiompglobalsearch</RootNamespace>
+    <ProjectGuid>{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}</ProjectGuid>
+    <RootNamespace>tbbglobalsearch</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,22 +42,21 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(MSMPI_INC);$(IncludePath)</IncludePath>
-    <LibraryPath>$(MSMPI_LIB32);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\lib\ia32\vc14;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(MSMPI_INC);$(IncludePath)</IncludePath>
-    <LibraryPath>$(MSMPI_LIB32);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\lib\ia32\vc14;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>msmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -68,17 +67,16 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>msmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="mpi.c" />
+    <ClCompile Include="tbb.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

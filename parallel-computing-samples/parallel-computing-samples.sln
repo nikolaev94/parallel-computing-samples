@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-cannon-algorithm", "mpi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-omp-global-search", "mpi-omp-global-search\mpi-omp-global-search.vcxproj", "{BA19457A-0F95-4E62-93EC-AE2C25C3BA38}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tbb-global-search", "tbb-global-search\tbb-global-search.vcxproj", "{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{BA19457A-0F95-4E62-93EC-AE2C25C3BA38}.Debug|Win32.Build.0 = Debug|Win32
 		{BA19457A-0F95-4E62-93EC-AE2C25C3BA38}.Release|Win32.ActiveCfg = Release|Win32
 		{BA19457A-0F95-4E62-93EC-AE2C25C3BA38}.Release|Win32.Build.0 = Release|Win32
+		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Debug|Win32.Build.0 = Debug|Win32
+		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Release|Win32.ActiveCfg = Release|Win32
+		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
