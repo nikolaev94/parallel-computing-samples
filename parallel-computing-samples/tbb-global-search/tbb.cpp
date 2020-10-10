@@ -14,11 +14,13 @@
 
 typedef double(*pfunction)(double);
 
-struct Node {
+struct Node
+{
     double x, z;
 };
 
-struct Segment {
+struct Segment
+{
     int index;
     double lipConst;
 };
@@ -29,7 +31,8 @@ struct Result
     double x, z;
 };
 
-double targetFunction(double x) {
+double targetFunction(double x)
+{
     std::this_thread::sleep_for(std::chrono::milliseconds(1));
     return sin(18. * x - 3.) * cos(10. * x - 7.) + 1.5;
 }
@@ -231,6 +234,6 @@ int main(int argc, char** argv) {
                  nthreads);
     tbb::tick_count t1 = tbb::tick_count::now();
     printf("Elapsed time: %f \n", (t1 - t0).seconds());
-    printf("X* = %f Z = %f Count = %d\n", outResult.x, outResult.z, outResult.count);
+    printf("X* = %f Z* = %f Count = %d\n", outResult.x, outResult.z, outResult.count);
     return 0;
 }
