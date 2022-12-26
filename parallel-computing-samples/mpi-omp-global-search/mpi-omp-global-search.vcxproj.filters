@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi.c">
+    <ClCompile Include="mpi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

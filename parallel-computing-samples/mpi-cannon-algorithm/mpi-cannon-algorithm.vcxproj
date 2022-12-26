@@ -79,9 +79,9 @@
     <ClCompile Include="mpi-cannon-algorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="matrA.txt" />
-    <Text Include="matrB.txt" />
-    <Text Include="matrInvA.txt" />
+    <Text Include="matrix_a.txt" />
+    <Text Include="matrix_b.txt" />
+    <Text Include="matrix_invA.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
