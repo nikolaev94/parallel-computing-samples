@@ -1,6 +1,11 @@
 # parallel-computing-samples
 MPI/OpenMP/TBB course tasks
 
+## Prerequisites
+- Microsoft Visual Studio 2015
+- Microsoft HPC Pack 2012
+- [Threading Building Blocks 2020 Update 3](https://github.com/oneapi-src/oneTBB/releases/tag/v2020.3)
+
 ## MPI Gauss-Jordan elimination
 Pair and collective operations. Test example is taken from:
 <http://linearalgebra4fun.blogspot.com/2015/06/>
@@ -20,6 +25,4 @@ Each rank parallely processes N >= 1 best search intervals in an iteration.
 
 ### TBB version
 Parallely initializes search invervals and processes N >= 1 best intervals in an iteration using **tbb::parallel_for**.  
-Visual Studio project expects TBB to be installed in: `$(USERPROFILE)\Opt\tbb-2020.3-win`. You should add DLLs location `$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\bin\ia32\vc14` to PATH for debugging purposes.  
-Code tested with this TBB release:
-<https://github.com/oneapi-src/oneTBB/releases/tag/v2020.3>
+Visual Studio project expects TBB to be installed in: `$(USERPROFILE)\Opt\tbb-2020.3-win`. You should add DLLs location `$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\bin\ia32\vc14` to PATH for debugging purposes.
