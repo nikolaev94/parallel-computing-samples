@@ -1,5 +1,5 @@
 # parallel-computing-samples
-MPI/OpenMP/TBB course samples
+MPI/OpenMP/TBB course tasks
 
 ## MPI Gauss-Jordan elimination
 Pair and collective operations. Test example is taken from:
