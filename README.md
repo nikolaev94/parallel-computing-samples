@@ -1,16 +1,16 @@
 # parallel-computing-samples
-MPI/OpenMP/TBB course tasks
+Parallel computing course tasks. Intel Delta Course 2016 tasks
 
 ## Prerequisites
 - Microsoft Visual Studio 2015
 - Microsoft HPC Pack 2012
 - [Threading Building Blocks 2020 Update 3](https://github.com/oneapi-src/oneTBB/releases/tag/v2020.3)
 
-## MPI Gauss-Jordan elimination
+## MPI Gauss-Jordan elimination [mpi-gauss-jordan]
 Pair and collective operations. Test example is taken from:
 <http://linearalgebra4fun.blogspot.com/2015/06/>
 
-## MPI Cannon's algorithm
+## MPI Cannon's algorithm [mpi-cannon-algorithm]
 Cartesian topology. Sample processes 6x6 matrices using 3x3 grid (9 ranks).
 Method description can be found at:
 <http://parallelcomp.uw.hu/ch08lev1sec2.html>
@@ -20,9 +20,9 @@ Parallel global optimization algorithm. Benefitable when function evaluation is 
 Target function plot via WolframAlpha:
 <https://www.wolframalpha.com/input/?i=min%28sin%2818.+*+x+-+3.%29+*+cos%2810.+*+x+-+7.%29+%2B+1.5%29+x+from+-3+to+3>
 
-### MPI / OpenMP version
+### MPI + OpenMP version [mpi-omp-global-search]
 Each rank parallely processes N >= 1 best search intervals in an iteration.
 
-### TBB version
+### TBB version [tbb-global-search]
 Parallely initializes search invervals and processes N >= 1 best intervals in an iteration using **tbb::parallel_for**.  
 Visual Studio project expects TBB to be installed in: `$(USERPROFILE)\Opt\tbb-2020.3-win`. You should add DLLs location `$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\bin\ia32\vc14` to PATH for debugging purposes.

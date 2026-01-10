@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-omp-global-search", "mp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tbb-global-search", "tbb-global-search\tbb-global-search.vcxproj", "{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-compute-frames", "mpi-compute-frames\mpi-compute-frames.vcxproj", "{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +35,10 @@ Global
 		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Debug|Win32.Build.0 = Debug|Win32
 		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Release|Win32.ActiveCfg = Release|Win32
 		{4B00574E-D04B-4F10-BB23-C13CDFC8A0BB}.Release|Win32.Build.0 = Release|Win32
+		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Debug|Win32.Build.0 = Debug|Win32
+		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Release|Win32.ActiveCfg = Release|Win32
+		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
