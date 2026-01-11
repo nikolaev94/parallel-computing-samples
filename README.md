@@ -26,3 +26,6 @@ Each rank parallely processes N >= 1 best search intervals in an iteration.
 ### TBB version [tbb-global-search]
 Parallely initializes search invervals and processes N >= 1 best intervals in an iteration using **tbb::parallel_for**.  
 Visual Studio project expects TBB to be installed in: `$(USERPROFILE)\Opt\tbb-2020.3-win`. You should add DLLs location `$(USERPROFILE)\Opt\tbb-2020.3-win\tbb\bin\ia32\vc14` to PATH for debugging purposes.
+
+## MPI Frame stubs [mpi-compute-frames]
+Root process sends unique frames to the processes. Processes receive a frame and sends it back to the root process
