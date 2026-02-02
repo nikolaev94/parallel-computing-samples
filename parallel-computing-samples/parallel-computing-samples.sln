@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tbb-global-search", "tbb-gl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-compute-frames", "mpi-compute-frames\mpi-compute-frames.vcxproj", "{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpi-bcast-reduce-allreduce", "mpi-bcast-reduce-allreduce\mpi-bcast-reduce-allreduce.vcxproj", "{9B6C3214-3C17-40ED-A452-F6F7D344A878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,10 @@ Global
 		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Debug|Win32.Build.0 = Debug|Win32
 		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Release|Win32.ActiveCfg = Release|Win32
 		{A7D1E508-14E3-4D00-80F2-468C3EF8C96D}.Release|Win32.Build.0 = Release|Win32
+		{9B6C3214-3C17-40ED-A452-F6F7D344A878}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B6C3214-3C17-40ED-A452-F6F7D344A878}.Debug|Win32.Build.0 = Debug|Win32
+		{9B6C3214-3C17-40ED-A452-F6F7D344A878}.Release|Win32.ActiveCfg = Release|Win32
+		{9B6C3214-3C17-40ED-A452-F6F7D344A878}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
