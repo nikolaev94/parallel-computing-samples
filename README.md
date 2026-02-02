@@ -15,6 +15,10 @@ Cartesian topology. Sample processes 6x6 matrices using 3x3 grid (9 ranks).
 Method description can be found at:
 <http://parallelcomp.uw.hu/ch08lev1sec2.html>
 
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-cart-create-function
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-cart-coords-function
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-cart-shift-function
+
 ## Global search algorithm
 Parallel global optimization algorithm. Benefitable when function evaluation is time-expensive.
 Target function plot via WolframAlpha:
@@ -29,3 +33,10 @@ Visual Studio project expects TBB to be installed in: `$(USERPROFILE)\Opt\tbb-20
 
 ## MPI Frame stubs [mpi-compute-frames]
 Root process sends unique frames to the processes. Processes receive a frame and sends it back to the root process
+
+## MPI Bcast + Reduce + Allreduce [mpi-bcast-reduce-allreduce]
+Implementation of MPI_Bcast, MPI_Reduce, MPI_Allreduce which utilizes only process-to-process communication operations
+
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-bcast-function
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-reduce-function
+- https://learn.microsoft.com/en-us/message-passing-interface/mpi-allreduce-function
